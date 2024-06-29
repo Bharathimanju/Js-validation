@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            input:required{
+                border:2px solid red;
+                background-color:aque;
+            }
+            input:optional{
+                border:2px solid blue;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <label for="">email</label>
+            <input type="email" name="email" required>
+            <label for="">username</label>
+            <input type="text" name="username" optional>
+            <input type="submit" value="login">
+        </form>
+    </body>
+</html>
