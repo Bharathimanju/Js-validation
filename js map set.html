@@ -1,0 +1,33 @@
+<p id="d1"></p>
+<script>
+    const f1=new Map()
+    f1.set(101,"apple");
+    f1.set(102, "orange");
+    f1.set(103,"mango");
+    f1.set(104,"graps")
+    let num=f1.get(102)
+    document.getElementById("d1").innerHTML="there is a :: "+num;
+    // delete map value
+    f1.delete(101)
+    console.log("after deleting..",f1)
+    // clear map value
+    f1.clear()
+    console.log("clear function..",f1)
+    // searching
+    f1.has(103)
+    console.log("searching the character..",f1)
+    // entries
+    let text="";
+    for (let[key,values]of f1.entries())
+    {
+        text+=key+"="+value +"<br>";
+    }
+    document.getElementById("d1").innerHTML=text;
+    // values
+    let text2=""
+    for (let values of f1.values())
+    {
+        text2+=value+"<br>"
+    }
+
+</script>
